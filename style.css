@@ -1,9 +1,9 @@
 html,body{
     margin:0;
-    padding:0
+    padding:0;
 }
 body{
-    font: 76% arial,sans-serif;
+    font: 76% Times New Roman,sans-serif;
     text-align:justify;
     padding: 0 40vh;
     line-height: 1.5;
@@ -17,8 +17,11 @@ h4 {
     margin:5px 10px 10px;
     font-size:medium;
 }
+p{
+    text-indent: 35px;
+}
 p, li{
     margin:5px 10px 10px;
-    font-size: 15px;
+    font-size: 13pt;
 }
 a{padding:5px; text-decoration:none; color:#000000;}
