@@ -132,6 +132,8 @@
         <li><strong>Relasi Tabel Database</strong></li>
         <p>Relasi Tabel adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata. Relasi merupakan hubungan yang terjadi pada suatu tabel dengan lainnya yang mempresentasikan hubungan antar objek di dunia nyata dan berfungsi untuk mengatur mengatur operasi suatu database.</p>
         <img src="sources/relasi_tabel1.png" alt="">
+
+        <!-- ##################### Penerapan metode Agile ############################# -->
         <p>Gambar 3. Relasi Tabel</p><br>
         <li><strong>Tujuan Penerapan Model Agile</strong></li><br>
         <p>Tujuan penerapan metode Agile dalam pengembangan Agile</p>
@@ -186,7 +188,7 @@
     <br>
     <ol>
         <li><strong>Requirements Planning (Perencanaan)</strong></li><br>
-        <p>Penerapan metode RAD dalam membuat aplikasi ini diawali dengan tahap perencanaan syarat dan kebutuhan website. Acuan dalam pembuatan aplikasi ini yaitu dengan menganalisa kebutuhan user, 
+        <p>Penerapan metode agile dalam membuat aplikasi ini diawali dengan tahap perencanaan syarat dan kebutuhan website. Acuan dalam pembuatan aplikasi ini yaitu dengan menganalisa kebutuhan user, 
             dimana user aplikasi ini terdiri dari admin, operator, dan anggota. Orientasi dalam fase ini adalah pemecahan masalah-masalah, berikut ini adalah hasil analisa mengenai syarat-syarat sistem, kebutuhan, data, software dan lainnya.</p>
         <ol>
             <li>Kebutuhan Fungsional</li>
@@ -317,6 +319,243 @@
                     <p>Gambar 9. Activity Diagram Anggota - Pendaftaran</p> 
                     <br><img src="sources/Activity Diagram-Anggota (Peminjaman).png" style="width: 410px; height: 480px;">
                     <p>Gambar 10. Activity Diagram Anggota - Peminjaman</p><br>
+                </ol>
+                <li>Struktur Tabel</li>
+                <p>Dalam pengembangan sistem ini memerlukan beberapa tabel yang
+                    akan diolah untuk dijadikan suatu informasi yang dapat menghasilkan
+                    keluaran yang diperlukan.</p>
+                <ol type="a">
+                    <li>Tabel User</li>
+                    <table>
+                        <tr>
+                            <td>Fungsi tabel user</td>
+                            <td>: untuk menyimpan data user</td>
+                        </tr>
+                        <tr>
+                            <td>Field kunci utama</td>
+                            <td>: no_induk</td>
+                        </tr>
+                        <tr>
+                            <td>Field kunci tamu</td>
+                            <td>: - </td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah Field</td>
+                            <td>: 7</td>
+                        </tr>
+                    </table><br>
+                    <p>Tabel 1.1 Struktur Tabel User</p>
+                    <div class="tab_struktur">
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nama Field</th>
+                                <th>Type</th>
+                                <th>Width</th>
+                                <th>Keterangan</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>no_induk*</td>
+                                <td>int</td>
+                                <td>10</td>
+                                <td>No. induk user</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>nama_lengkap</td>
+                                <td>varchar</td>
+                                <td>200</td>
+                                <td>Nama lengkap user</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>username</td>
+                                <td>varchar</td>
+                                <td>100</td>
+                                <td>username</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>no_hp</td>
+                                <td>varchar</td>
+                                <td>20</td>
+                                <td>No. HP user</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>password</td>
+                                <td>varchar</td>
+                                <td>100</td>
+                                <td>password user</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>ulang_password</td>
+                                <td>varchar</td>
+                                <td>100</td>
+                                <td>konfirmasi password</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>level</td>
+                                <td>varchar</td>
+                                <td>100</td>
+                                <td>level akses</td>
+                            </tr>
+                        </table>
+                    </div><br>
+                    
+                   
+                    <li>Tabel Buku</li>
+                    <table>
+                        <tr>
+                            <td>Fungsi tabel buku</td>
+                            <td>: untuk menyimpan data user</td>
+                        </tr>
+                        <tr>
+                            <td>Field kunci utama</td>
+                            <td>: kode_buku</td>
+                        </tr>
+                        <tr>
+                            <td>Field kunci tamu</td>
+                            <td>: - </td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah Field</td>
+                            <td>: 5</td>
+                        </tr>
+                    </table><br>
+                    <p>Tabel 1.2 Struktur Tabel Buku</p>
+                    <div class="tab_struktur">
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nama Field</th>
+                                <th>Type</th>
+                                <th>Width</th>
+                                <th>Keterangan</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>kode_buku*</td>
+                                <td>int</td>
+                                <td>10</td>
+                                <td>Kode buku</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>judul_buku</td>
+                                <td>varchar</td>
+                                <td>200</td>
+                                <td>Judul buku</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>penulis_buku</td>
+                                <td>varchar</td>
+                                <td>200</td>
+                                <td>Nama penulis buku</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>penerbit_buku</td>
+                                <td>varchar</td>
+                                <td>100</td>
+                                <td>Nama penerbit buku</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>tahun_terbit</td>
+                                <td>varchar</td>
+                                <td>4</td>
+                                <td>Tahun terbit buku</td>
+                            </tr>
+                        </table>
+                    </div><br>
+                    
+                    
+                    <li>Tabel Transaksi</li>
+                    <table>
+                        <tr>
+                            <td>Fungsi tabel transaksi</td>
+                            <td>: untuk menyimpan data transaksi</td>
+                        </tr>
+                        <tr>
+                            <td>Field kunci utama</td>
+                            <td>: id_transaksi</td>
+                        </tr>
+                        <tr>
+                            <td>Field kunci tamu</td>
+                            <td>: kode_buku, no_induk </td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah Field</td>
+                            <td>: 7</td>
+                        </tr>
+                    </table><br>
+                    <p>Tabel 1.3 Struktur Tabel Transaksi</p>
+                    <div class="tab_struktur">
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nama Field</th>
+                                <th>Type</th>
+                                <th>Width</th>
+                                <th>Keterangan</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>id_transaksi*</td>
+                                <td>int</td>
+                                <td>11</td>
+                                <td>ID transaksi</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>kode_buku**</td>
+                                <td>varchar</td>
+                                <td>10</td>
+                                <td>Kode buku</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>no_induk**</td>
+                                <td>varchar</td>
+                                <td>10</td>
+                                <td>No. induk user</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>nama_lengkap</td>
+                                <td>varchar</td>
+                                <td>200</td>
+                                <td>Nama lengkap user</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>tgl_pinjam</td>
+                                <td>varchar</td>
+                                <td>50</td>
+                                <td>Tanggal peminjaman</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>tgl_kembali</td>
+                                <td>varchar</td>
+                                <td>50</td>
+                                <td>Tanggal pengembalian</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>status</td>
+                                <td>varchar</td>
+                                <td>50</td>
+                                <td>status peminjaman</td>
+                            </tr>
+                        </table>
+                    </div><br>
+                    
                 </ol>
                 <li>Relasi Antar Tabel</li>
                 <p>Secara umum. relasi adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata</p>
